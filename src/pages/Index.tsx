@@ -84,7 +84,7 @@ const Index: React.FC = () => {
 
     function downloadFile(filename) {
     const link = document.createElement('a');
-    link.href = `${filename}`;
+    link.href = `/${filename}`;  // use a relative root path
     link.setAttribute('download', filename);
     document.body.appendChild(link);
     link.click();
@@ -93,6 +93,7 @@ const Index: React.FC = () => {
 
   // Usage
   downloadFile('Alam_Jhonel_CV.pdf');
+
 
 
     // Show completion toast after a delay
