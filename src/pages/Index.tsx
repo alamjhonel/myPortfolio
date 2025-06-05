@@ -93,7 +93,7 @@ const Index: React.FC = () => {
   }
 
   // Usage
-  downloadFile('public/Alam_Jhonel_CV.pdf');
+  downloadFile('/Alam_Jhonel_CV.pdf');
 
 
     // Show completion toast after a delay
