@@ -92,8 +92,8 @@ const Index: React.FC = () => {
     document.body.removeChild(link);
   }
 
-  // Usage
-  downloadFile('/Alam_Jhonel_CV.pdf');
+    // Usage
+    downloadFile('/Alam_Jhonel_CV.pdf');
 
 
     // Show completion toast after a delay
