@@ -82,13 +82,18 @@ const Index: React.FC = () => {
       description: "Your CV download has started",
     });
 
-    // Trigger file download
+    function downloadFile(filename) {
     const link = document.createElement('a');
-    link.href = 'Alam_Jhonel_CV.pdf'; // Path relative to the public directory
-    link.download = 'Alam_Jhonel_CV.pdf';
+    link.href = `${filename}`;
+    link.setAttribute('download', filename);
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+  }
+
+  // Usage
+  downloadFile('Alam_Jhonel_CV.pdf');
+
 
     // Show completion toast after a delay
     setTimeout(() => {
